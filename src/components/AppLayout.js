@@ -1,6 +1,7 @@
 import React from 'react';
 import { AppContainer, MainContainer, Header, HeaderContent, Title }from '../styles'
 import { UserPanel } from './UserPanel';
+import { Link } from 'react-router-dom'
 
 export const AppLayout = ( { children }) => {
     return (
@@ -9,7 +10,7 @@ export const AppLayout = ( { children }) => {
                 <MainContainer>
                     <HeaderContent>
                         <Title>
-                            Mama Mia
+                            <Link to="/">Mama Mia</Link>
                         </Title>
                         <UserPanel />
                     </HeaderContent>

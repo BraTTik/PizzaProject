@@ -1,15 +1,18 @@
 import React from 'react';
-import { PizzaContainer, PizzaContainerFooter, PizzaContainerTitle, PizzaDescription } from '../../styles';
+import { PizzaContainer, PizzaContainerFooter, PizzaContainerTitle, PizzaDescription, Price } from '../../styles';
 import { Button } from '../Button';
 import { useAppState } from '../../Contexts/AppState';
+import { useCart } from '../../Contexts/CartContext';
 import PropTypes from 'prop-types';
 
 export const PizzaCard = ( { name, price, description, image } ) => {
     const { state } = useAppState();
+    const { addPizza } = useCart();
     return(
         <PizzaContainer>
             <img 
                 src= { image }
+                alt={name}
             />
             <PizzaContainerTitle>
                 {name}
@@ -18,15 +21,15 @@ export const PizzaCard = ( { name, price, description, image } ) => {
                 {description}
             </PizzaDescription>
             <PizzaContainerFooter>
-                <div>
+                <Price>
                     {
                     state.currency === 'EURO' ?
-                        `€${price.euro}` :
-                        `$${price.usd}`
+                        `€${price.EURO}` :
+                        `$${price.USD}`
                     }
-                </div>
+                </Price>
                 <div>
-                    <Button onClick={ () => console.log('added to cart') }>
+                    <Button onClick={ () => addPizza({name, price, description, image}) } >
                         Add to cart
                     </Button>
                 </div>

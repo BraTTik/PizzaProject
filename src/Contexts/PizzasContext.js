@@ -6,8 +6,8 @@ const pizzaData = {
             name: 'Pepperoni',
             description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolore modi laborum accusamus qui in molestias voluptatem debitis tempora?',
             price: {
-                euro: 10.99,
-                usd: 12.99
+                EURO: 10.99,
+                USD: 12.99
             },
             image: '/img/pepperoni-pizza.jpg'
         },
@@ -15,8 +15,8 @@ const pizzaData = {
             name: '4 cheese',
             description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolore modi laborum accusamus qui in molestias voluptatem debitis tempora?',
             price: {
-                euro: 10.99,
-                usd: 9.99
+                EURO: 10.99,
+                USD: 9.99
             },
             image: '/img/4-cheese-pizza.png'
         },
@@ -24,8 +24,8 @@ const pizzaData = {
             name: 'Barbecue pizza',
             description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolore modi laborum accusamus qui in molestias voluptatem debitis tempora?',
             price: {
-                euro: 10.99,
-                usd: 12.99
+                EURO: 10.99,
+                USD: 12.99
             },
             image: '/img/bbq-pizza.jpg'
         },
@@ -33,8 +33,8 @@ const pizzaData = {
             name: 'Double Pepperoni',
             description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolore modi laborum accusamus qui in molestias voluptatem debitis tempora?',
             price: {
-                euro: 10.99,
-                usd: 12.99
+                EURO: 10.99,
+                USD: 12.99
             },
             image: '/img/double-pepperoni-pizza.jpg'
         },
@@ -42,8 +42,8 @@ const pizzaData = {
             name: 'Hawaii',
             description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolore modi laborum accusamus qui in molestias voluptatem debitis tempora?',
             price: {
-                euro: 10.99,
-                usd: 12.99
+                EURO: 10.99,
+                USD: 12.99
             },
             image: '/img/hawaii-pizza.jpg'
         },
@@ -51,8 +51,8 @@ const pizzaData = {
             name: 'Margherita',
             description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolore modi laborum accusamus qui in molestias voluptatem debitis tempora?',
             price: {
-                euro: 7.99,
-                usd: 8.99
+                EURO: 7.99,
+                USD: 8.99
             },
             image: '/img/margherita-pizza.png'
         },
@@ -60,8 +60,8 @@ const pizzaData = {
             name: 'Meat pizza',
             description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolore modi laborum accusamus qui in molestias voluptatem debitis tempora?',
             price: {
-                euro: 13.99,
-                usd: 15.99
+                EURO: 13.99,
+                USD: 15.99
             },
             image: '/img/meat-pizza.png'
         },

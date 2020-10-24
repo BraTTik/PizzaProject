@@ -17,11 +17,12 @@ export const Header = styled.div`
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1000;
 `
 
 export const HeaderContent = styled.div`
     display: flex;
-    padding: 1rem 0;
+    padding: 1rem .5rem;
     align-items: center;
     justify-content: space-between;
 `
@@ -50,6 +51,7 @@ export const AppContainer = styled.div`
 
 export const CustomSelect = styled.div`
     position: relative;
+    cursor: pointer;
     select{
         border-radius: 10px;
         padding: .5rem 1rem;
@@ -105,6 +107,39 @@ export const PizzaDescription = styled.p`
     font-size: .8rem;
 `
 
+export const Price = styled.div`
+    font-size: 1.125rem;
+    font-weight: bold;
+`
+
+export const CartItemContainer = styled.div`
+    max-width: 100vw;
+    min-height: 150px;
+    max-height: 200px;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    background-color: #fff;
+`
+export const CartItemContainerDescription = styled.div`
+    display: flex;
+    align-items: center;
+    max-width: 70%;
+    overflow-y: auto;
+    img{
+        height: 100%;
+        margin-right: 1rem;
+    }
+    h3{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    p{
+        max-height: 55px;
+        overflow-y: hidden;
+    }
+`
+
 export const MainButton = styled.button`
     border: 2px solid ${colorSet.border};
     background-color: ${colorSet.second};
@@ -114,6 +149,8 @@ export const MainButton = styled.button`
     padding: .5em 1em;
     text-transform: uppercase;
     transition: all .2s ease;
+    cursor: pointer;
+    font-family: sans-serif;
 
     :hover{
         background-color: ${colorSet.main};
@@ -126,6 +163,21 @@ export const MainButton = styled.button`
     :active{
         background-color: ${colorSet.border}
     }
-
+`
+export const EmptyCartContainer = styled.div`
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    position: relative; 
+    margin-top: -5rem;
 `
 
+export const EmptyCartInfo = styled.div`
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`

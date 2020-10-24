@@ -11,3 +11,12 @@ html{
 html, body, #root{
   height: 100%;
 }
+body{
+  background-color: #F1F1F1;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  font-family: sans-serif;
+}
