@@ -55,6 +55,11 @@ export const CartProvider = ({children}) => {
         }, 0)
     }
 
+    const clearCart = () => {
+        setPizzas([]);
+        savePizzas([]);
+    }
+
     return (
         <CartContext.Provider
             value = {{
@@ -62,7 +67,8 @@ export const CartProvider = ({children}) => {
                 addPizza,
                 removePizza,
                 getTotalAmount,
-                getTotal
+                getTotal,
+                clearCart,
             }}
         >
             { children }

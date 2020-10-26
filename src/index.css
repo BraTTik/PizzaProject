@@ -20,3 +20,7 @@ a{
   color: inherit;
   font-family: sans-serif;
 }
+
+ul{
+  list-style-type: none;
+}

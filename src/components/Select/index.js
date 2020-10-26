@@ -1,21 +1,12 @@
 import React from 'react';
 import { CustomSelect } from '../../styles';
-import { useAppState } from '../../Contexts/AppState';
-import { CHANGE_CURRENCY } from '../../Contexts/AppStateActions';
 import PropTypes from 'prop-types';
 
-export const Select = ( { options }) => {
-    const { dispatch } = useAppState();
+export const Select = ( { options, changeHandler, activeValue}) => {
 
-    const changeHandler = (e) => {
-        dispatch({
-            type: CHANGE_CURRENCY,
-            payload: e.target.value,
-        })
-    }
     return (
         <CustomSelect>
-            <select onChange={changeHandler}>
+            <select onChange={changeHandler} value={activeValue}>
                 { options.map( (option, i) => (
                     <option key={option+i}>{option}</option>
                 ))}
@@ -25,5 +16,7 @@ export const Select = ( { options }) => {
 }
 
 Select.propTypes = {
-    options: PropTypes.arrayOf(PropTypes.string)
+    options: PropTypes.arrayOf(PropTypes.string),
+    changeHandler: PropTypes.func,
+    activeValue: PropTypes.string,
 }

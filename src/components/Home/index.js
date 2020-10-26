@@ -5,8 +5,8 @@ import { PizzaCard } from '../PizzaCard';
 import { usePizza } from '../../Contexts/PizzasContext';
 
 
-export const Home = () => {
-    const { pizzas } = usePizza();
+export const Home = ( { usePizzaHook = usePizza }) => {
+    const { pizzas } = usePizzaHook();
     return(
         <AppLayout>
             <PizzasWrapper>

@@ -181,3 +181,58 @@ export const EmptyCartInfo = styled.div`
     flex-direction: column;
     align-items: center;
 `
+
+export const Total = styled.div`
+    text-align: right;
+    padding: 1rem;
+    background-color: white;
+    font-size: 1.125rem;
+    font-weight: bold;
+`
+
+export const FormFieldContainer = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    &>*{
+        flex-basis: 200px;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+`
+
+export const CheckoutContainer = styled.div`
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    @media(max-width: 700px){
+        flex-direction: column-reverse;
+    }
+`
+
+export const CheckoutListContainer = styled.div`
+    padding: 1rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px ${colorSet.main + 99};
+    border-radius: 5px;
+    align-self: flex-start;
+    margin-bottom: 1rem;
+    h3{
+        margin: 1rem 0rem;
+    }
+`
+
+export const OrderContainer = styled.div`
+    background-color: #fff;
+    padding: 1rem;
+    max-width: 500px;
+    margin: auto;
+    &>div{
+        margin-bottom: 1rem;
+    }
+    li{
+        margin-left: 1rem;
+        padding: .5rem;
+    }
+`

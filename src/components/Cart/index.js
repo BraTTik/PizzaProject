@@ -5,16 +5,7 @@ import { useCart } from '../../Contexts/CartContext';
 import { EmptyCart } from './EmptyCart';
 import { CartItem } from './CartItem';
 import { useAppState } from '../../Contexts/AppState';
-import { MainButton } from '../../styles';
-import styled from 'styled-components';
-
-const Total = styled.div`
-    text-align: right;
-    padding: 1rem;
-    background-color: white;
-    font-size: 1rem;
-    font-weight: bold;
-`
+import { MainButton, Total } from '../../styles';
 
 export const Cart = () => {
     const { pizzas, getTotal } = useCart();
