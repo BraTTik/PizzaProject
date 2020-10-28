@@ -6,24 +6,6 @@ import { Redirect } from 'react-router-dom';
 import { Total, MainButton } from '../../styles';
 
 export const Order = () => {
-    /* 
-        details:
-            currency: "EURO"
-            pizzas: Array(2)
-            0: {name: "Barbecue pizza", price: {…}, description: "Lorem ipsum dolor sit, amet consectetur adipisicin…amus qui in molestias voluptatem debitis tempora?", image: "/img/bbq-pizza.jpg", amount: 2}
-            1: {name: "4 cheese", price: {…}, description: "Lorem ipsum dolor sit, amet consectetur adipisicin…amus qui in molestias voluptatem debitis tempora?", image: "/img/4-cheese-pizza.png", amount: 2}
-            length: 2
-        total: 43.96
-        id: 1603720662327
-        user:
-            apartment: 1
-            building: ""
-            house: 2
-            lastName: "2"
-            name: "DMITRII NIKOLAEV"
-            phone: "(891) 503-48-12"
-            street: "Черноморский Бульвар"
-    */
     const { state } = useAppState();
     const { order } = state;
     if(!order.id){

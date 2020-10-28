@@ -21,7 +21,7 @@ const pizzaData = {
             image: '/img/4-cheese-pizza.png'
         },
         {
-            name: 'Barbecue pizza',
+            name: 'Barbecue',
             description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolore modi laborum accusamus qui in molestias voluptatem debitis tempora?',
             price: {
                 EURO: 10.99,
@@ -57,7 +57,7 @@ const pizzaData = {
             image: '/img/margherita-pizza.png'
         },
         {
-            name: 'Meat pizza',
+            name: 'Meat',
             description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolore modi laborum accusamus qui in molestias voluptatem debitis tempora?',
             price: {
                 EURO: 13.99,
@@ -65,6 +65,24 @@ const pizzaData = {
             },
             image: '/img/meat-pizza.png'
         },
+        {
+            name: 'Bacon',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolore modi laborum accusamus qui in molestias voluptatem debitis tempora?',
+            price: {
+                EURO: 11.99,
+                USD: 10.99
+            },
+            image: '/img/bacon-pizza.jpg'
+        },
+        {
+            name: 'Tomato',
+            description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos dolore modi laborum accusamus qui in molestias voluptatem debitis tempora?',
+            price: {
+                EURO: 11.99,
+                USD: 10.99
+            },
+            image: '/img/tomato-pizza.jpg'
+        }
     ]
 }
 

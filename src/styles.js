@@ -9,6 +9,11 @@ const colorSet = {
     lightgray: '#F1F1F1',
 }
 
+const fonts = {
+    main: 'Rubik',
+    second: 'Roboto'
+}
+
 export const Header = styled.div`
     min-height: 5rem;
     width: 100%;
@@ -31,7 +36,7 @@ export const HeaderContent = styled.div`
 export const Title = styled.h1`
     font-weight: normal;
     font-size: 2.5rem;
-    font-family: sans-serif;
+    font-family: ${fonts.second}, sans-serif;
 `
 export const NavPanel = styled.div`
     display: flex;
@@ -52,12 +57,15 @@ export const AppContainer = styled.div`
 export const CustomSelect = styled.div`
     position: relative;
     cursor: pointer;
+    font-family: ${fonts.second}, sans-serif;
     select{
         border-radius: 10px;
         padding: .5rem 1rem;
         outline: none;
         text-transform: uppercase;
-        border: 2px solid ${colorSet.border};
+        /* border: 1px solid ${colorSet.border}; */
+        border: none;
+        box-shadow: 0px 0px 3px ${colorSet.border};
         background-color: ${colorSet.second};
     };
 `
@@ -105,6 +113,8 @@ export const PizzaContainerTitle = styled.h3`
 
 export const PizzaDescription = styled.p`
     font-size: .8rem;
+    color: #7a7a7a;
+    font-weight: thin;
 `
 
 export const Price = styled.div`
@@ -141,7 +151,7 @@ export const CartItemContainerDescription = styled.div`
 `
 
 export const MainButton = styled.button`
-    border: 2px solid ${colorSet.border};
+    border: none;
     background-color: ${colorSet.second};
     outline: none;
     color: ${colorSet.text};
@@ -150,8 +160,8 @@ export const MainButton = styled.button`
     text-transform: uppercase;
     transition: all .2s ease;
     cursor: pointer;
-    font-family: sans-serif;
-
+    font-family: ${fonts.second}, sans-serif;
+    box-shadow: 0px 0px 3px ${colorSet.border};
     :hover{
         background-color: ${colorSet.main};
         color: ${colorSet.white};
@@ -162,6 +172,11 @@ export const MainButton = styled.button`
     }
     :active{
         background-color: ${colorSet.border}
+    }
+    :disabled{
+        pointer-events: none;
+        cursor: not-allowed;
+        opacity: .7;
     }
 `
 export const EmptyCartContainer = styled.div`
@@ -198,7 +213,7 @@ export const FormFieldContainer = styled.div`
         flex-grow: 1;
         flex-shrink: 1;
     }
-`
+ `
 
 export const CheckoutContainer = styled.div`
     background-color: #fff;
@@ -213,7 +228,6 @@ export const CheckoutContainer = styled.div`
 export const CheckoutListContainer = styled.div`
     padding: 1rem;
     font-size: 1.125rem;
-    font-weight: bold;
     box-shadow: 0px 0px 5px ${colorSet.main + 99};
     border-radius: 5px;
     align-self: flex-start;
@@ -235,4 +249,17 @@ export const OrderContainer = styled.div`
         margin-left: 1rem;
         padding: .5rem;
     }
+`
+
+export const LoginContainer = styled.div`
+    background-color: #fff;
+    padding: 1rem;
+`
+
+export const FormContainer = styled.div`
+    max-width: 500px;
+    box-shadow: 0px 0px 5px ${colorSet.border + '55'};
+    border-radius: 5px;
+    margin: auto;
+    padding: 1rem;
 `

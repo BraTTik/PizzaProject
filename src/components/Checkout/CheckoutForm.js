@@ -2,14 +2,14 @@ import React from 'react'
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup';
-import {FormField} from './FormField'
+import { FormField } from '../FormField'
 import { MainButton, FormFieldContainer } from '../../styles'
 
 const validationSchema = yup.object().shape({
     name: yup.string().required('Enter your name'),
     lastName: yup.string().required('Enter your last name'),
     phone: yup.string().required()
-            .matches(/^\(\d{3}\)\s\d{3}\-\d{2}\-\d{2}$/, 'Phone must have 10 numbers'),
+            .matches(/^\(\d{3}\)\s\d{3}-\d{2}-\d{2}$/, 'Phone must have 10 numbers'),
     street: yup.string().required('Please add street'),
     house: yup.number().typeError('Please, enter house number').required().positive().integer(),
     apartment: yup.number().typeError('Please, enter apartment number').required().positive().integer()

@@ -9,7 +9,6 @@ export const FormField = ({
     errors, 
     style,
     ...inputParams}) => {
-
     return (
         <div className="form-field" style={style}>
             <label className="form-label" id={`${name}-label`} htmlFor={name}>{ label }</label>

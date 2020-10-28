@@ -10,6 +10,7 @@
     border-bottom: 2px solid #FFDA73;
     padding: .5rem 1rem;
     transition: all .2s ease;
+    font-family: 'Rubik', sans-serif;
 }
 .form-input:focus{
     border-bottom: 2px solid #FFAA40;
